@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0346aa7c-d667-40ec-83e3-eb54aef1877c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <StaticUriPattern>^/static/.*</StaticUriPattern>
+    <StaticUriRewrite>^/$(MSBuildProjectName)/static/.*</StaticUriRewrite>
+    <PythonWsgiHandler>$(MSBuildProjectName).app</PythonWsgiHandler>
+    <Name>FlaskWebClient</Name>
+    <RootNamespace>FlaskWebClient</RootNamespace>
+    <InterpreterId>{dae2edeb-e4be-4b1a-b60b-29158a9982ab}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="echoprint-codegen\lookup.py" />
+    <Compile Include="FlaskWebClient\textblob\base.py" />
+    <Compile Include="FlaskWebClient\textblob\blob.py" />
+    <Compile Include="FlaskWebClient\textblob\classifiers.py" />
+    <Compile Include="FlaskWebClient\textblob\compat.py" />
+    <Compile Include="FlaskWebClient\textblob\decorators.py" />
+    <Compile Include="FlaskWebClient\textblob\download_corpora.py" />
+    <Compile Include="FlaskWebClient\textblob\en\inflect.py" />
+    <Compile Include="FlaskWebClient\textblob\en\np_extractors.py" />
+    <Compile Include="FlaskWebClient\textblob\en\parsers.py" />
+    <Compile Include="FlaskWebClient\textblob\en\sentiments.py" />
+    <Compile Include="FlaskWebClient\textblob\en\taggers.py" />
+    <Compile Include="FlaskWebClient\textblob\en\__init__.py" />
+    <Compile Include="FlaskWebClient\textblob\exceptions.py" />
+    <Compile Include="FlaskWebClient\textblob\formats.py" />
+    <Compile Include="FlaskWebClient\textblob\inflect.py" />
+    <Compile Include="FlaskWebClient\textblob\mixins.py" />
+    <Compile Include="FlaskWebClient\textblob\np_extractors.py" />
+    <Compile Include="FlaskWebClient\textblob\ordereddict.py" />
+    <Compile Include="FlaskWebClient\textblob\parsers.py" />
+    <Compile Include="FlaskWebClient\textblob\sentiments.py" />
+    <Compile Include="FlaskWebClient\textblob\taggers.py" />
+    <Compile Include="FlaskWebClient\textblob\tokenizers.py" />
+    <Compile Include="FlaskWebClient\textblob\translate.py" />
+    <Compile Include="FlaskWebClient\textblob\unicodecsv\__init__.py" />
+    <Compile Include="FlaskWebClient\textblob\utils.py" />
+    <Compile Include="FlaskWebClient\textblob\wordnet.py" />
+    <Compile Include="FlaskWebClient\textblob\_text.py" />
+    <Compile Include="FlaskWebClient\textblob\__init__.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\disk.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\format_stack.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\func_inspect.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\hashing.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\logger.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\memory.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\my_exceptions.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\numpy_pickle.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\parallel.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\pool.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\testing.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\common.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\data\create_numpy_pickle.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\data\__init__.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_disk.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_format_stack.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_func_inspect.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_func_inspect_special_encoding.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_hashing.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_logger.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_memory.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_my_exceptions.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_numpy_pickle.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_parallel.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\test_pool.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\test\__init__.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\_compat.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\_memory_helpers.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\_multiprocessing_helpers.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\joblib\__init__.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\beat.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\cache.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\core\audio.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\core\constantq.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\core\pitch.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\core\spectrum.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\core\time_frequency.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\core\__init__.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\decompose.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\display.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\effects.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\feature\rhythm.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\feature\spectral.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\feature\utils.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\feature\__init__.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\filters.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\onset.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\output.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\segment.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\util\decorators.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\util\exceptions.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\util\feature_extractor.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\util\files.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\util\utils.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\util\__init__.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\version.py" />
+    <Compile Include="FlaskWebClient\workload\librosa\__init__.py" />
+    <Compile Include="pyechonest\artist.py" />
+    <Compile Include="pyechonest\catalog.py" />
+    <Compile Include="pyechonest\config.py" />
+    <Compile Include="pyechonest\playlist.py" />
+    <Compile Include="pyechonest\proxies.py" />
+    <Compile Include="pyechonest\sandbox.py" />
+    <Compile Include="pyechonest\song.py" />
+    <Compile Include="pyechonest\track.py" />
+    <Compile Include="pyechonest\util.py" />
+    <Compile Include="pyechonest\__init__.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="FlaskWebClient\__init__.py" />
+    <Compile Include="FlaskWebClient\views.py" />
+    <Compile Include="FlaskWebClient\workload\SongAnalyzing1.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="echoprint-codegen\" />
+    <Folder Include="echoprint-codegen\src\" />
+    <Folder Include="echoprint-codegen\src\echoprint-codegen-ios\" />
+    <Folder Include="echoprint-codegen\src\echoprint-codegen-ios\echoprint-codegen-ios.xcodeproj\" />
+    <Folder Include="echoprint-codegen\src\echoprint-codegen-ios\echoprint-codegen-ios.xcodeproj\project.xcworkspace\" />
+    <Folder Include="echoprint-codegen\src\echoprint-codegen-ios\echoprint-codegen-ios\" />
+    <Folder Include="echoprint-codegen\windows\" />
+    <Folder Include="FlaskWebClient\" />
+    <Folder Include="FlaskWebClient\textblob\" />
+    <Folder Include="FlaskWebClient\textblob\en\" />
+    <Folder Include="FlaskWebClient\textblob\unicodecsv\" />
+    <Folder Include="FlaskWebClient\workload\" />
+    <Folder Include="FlaskWebClient\static\img\" />
+    <Folder Include="FlaskWebClient\static\" />
+    <Folder Include="FlaskWebClient\static\content\" />
+    <Folder Include="FlaskWebClient\static\fonts\" />
+    <Folder Include="FlaskWebClient\static\scripts\" />
+    <Folder Include="FlaskWebClient\templates\" />
+    <Folder Include="FlaskWebClient\workload\librosa\joblib\" />
+    <Folder Include="FlaskWebClient\workload\librosa\joblib\test\" />
+    <Folder Include="FlaskWebClient\workload\librosa\joblib\test\data\" />
+    <Folder Include="FlaskWebClient\workload\librosa\" />
+    <Folder Include="FlaskWebClient\workload\librosa\core\" />
+    <Folder Include="FlaskWebClient\workload\librosa\feature\" />
+    <Folder Include="FlaskWebClient\workload\librosa\util\" />
+    <Folder Include="FlaskWebClient\workload\librosa\util\example_data\" />
+    <Folder Include="pyechonest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="echoprint-codegen\src\AudioBufferInput.cxx" />
+    <Content Include="echoprint-codegen\src\AudioBufferInput.h" />
+    <Content Include="echoprint-codegen\src\AudioStreamInput.cxx" />
+    <Content Include="echoprint-codegen\src\AudioStreamInput.h" />
+    <Content Include="echoprint-codegen\src\Base64.cxx" />
+    <Content Include="echoprint-codegen\src\Base64.h" />
+    <Content Include="echoprint-codegen\src\Codegen.cxx" />
+    <Content Include="echoprint-codegen\src\Codegen.h" />
+    <Content Include="echoprint-codegen\src\Common.h" />
+    <Content Include="echoprint-codegen\src\echoprint-codegen-ios\echoprint-codegen-ios.xcconfig" />
+    <Content Include="echoprint-codegen\src\echoprint-codegen-ios\echoprint-codegen-ios.xcodeproj\project.pbxproj" />
+    <Content Include="echoprint-codegen\src\echoprint-codegen-ios\echoprint-codegen-ios.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="echoprint-codegen\src\echoprint-codegen-ios\echoprint-codegen-ios\echoprint-codegen-ios-Prefix.pch" />
+    <Content Include="echoprint-codegen\src\echoprint-codegen-ios\README.md" />
+    <Content Include="echoprint-codegen\src\File.h" />
+    <Content Include="echoprint-codegen\src\Fingerprint.cxx" />
+    <Content Include="echoprint-codegen\src\Fingerprint.h" />
+    <Content Include="echoprint-codegen\src\main.cxx" />
+    <Content Include="echoprint-codegen\src\Makefile" />
+    <Content Include="echoprint-codegen\src\MatrixUtility.cxx" />
+    <Content Include="echoprint-codegen\src\MatrixUtility.h" />
+    <Content Include="echoprint-codegen\src\Metadata.cxx" />
+    <Content Include="echoprint-codegen\src\Metadata.h" />
+    <Content Include="echoprint-codegen\src\Params.h" />
+    <Content Include="echoprint-codegen\src\SubbandAnalysis.cxx" />
+    <Content Include="echoprint-codegen\src\SubbandAnalysis.h" />
+    <Content Include="echoprint-codegen\src\Whitening.cxx" />
+    <Content Include="echoprint-codegen\src\Whitening.h" />
+    <Content Include="echoprint-codegen\src\win_funcs.h" />
+    <Content Include="echoprint-codegen\src\win_unistd.h" />
+    <Content Include="echoprint-codegen\windows\.gitignore" />
+    <Content Include="echoprint-codegen\windows\codegen.sln" />
+    <Content Include="echoprint-codegen\windows\codegen.vcxproj" />
+    <Content Include="echoprint-codegen\windows\codegen.vcxproj.filters" />
+    <Content Include="echoprint-codegen\windows\README.md" />
+    <Content Include="FlaskWebClient\static\content\ClientMainPage.css" />
+    <Content Include="FlaskWebClient\static\content\Login.css" />
+    <Content Include="FlaskWebClient\static\content\signup.css" />
+    <Content Include="FlaskWebClient\static\img\1.jpg" />
+    <Content Include="FlaskWebClient\static\img\2.jpg" />
+    <Content Include="FlaskWebClient\static\img\3.jpg" />
+    <Content Include="FlaskWebClient\static\img\4.jpg" />
+    <Content Include="FlaskWebClient\static\content\component.css" />
+    <Content Include="FlaskWebClient\static\content\demo.css" />
+    <Content Include="FlaskWebClient\static\content\normalize.css" />
+    <Content Include="FlaskWebClient\static\img\fair-5.jpg" />
+    <Content Include="FlaskWebClient\static\img\fromplane.jpg" />
+    <Content Include="FlaskWebClient\static\img\my hearts swimming.jpeg" />
+    <Content Include="FlaskWebClient\static\img\natural takes it way.jpeg" />
+    <Content Include="FlaskWebClient\static\img\ontable.jpg" />
+    <Content Include="FlaskWebClient\static\img\papers.co-ml93-aurora-night-sky-instagram-art-nature-15-wallpaper.jpg" />
+    <Content Include="FlaskWebClient\static\img\quit up on mountain.jpeg" />
+    <Content Include="FlaskWebClient\static\img\rabelos-vila-nova-de-gaia-portugal.jpg" />
+    <Content Include="FlaskWebClient\static\img\seeking beaty.jpeg" />
+    <Content Include="FlaskWebClient\static\img\space is beauty.jpg" />
+    <Content Include="FlaskWebClient\static\img\sun take it all.jpeg" />
+    <Content Include="FlaskWebClient\static\scripts\boxesFx.js" />
+    <Content Include="FlaskWebClient\static\scripts\classie.js" />
+    <Content Include="FlaskWebClient\static\scripts\Login.js" />
+    <Content Include="FlaskWebClient\static\scripts\modernizr.custom.js" />
+    <Content Include="FlaskWebClient\templates\ClientMainPage.html" />
+    <Content Include="FlaskWebClient\templates\StartHere.html" />
+    <Content Include="FlaskWebClient\templates\signuppg.html" />
+    <Content Include="FlaskWebClient\templates\logIn.html" />
+    <Content Include="FlaskWebClient\templates\SignUp.html" />
+    <Content Include="FlaskWebClient\textblob\en\en-context.txt" />
+    <Content Include="FlaskWebClient\textblob\en\en-entities.txt" />
+    <Content Include="FlaskWebClient\textblob\en\en-lexicon.txt" />
+    <Content Include="FlaskWebClient\textblob\en\en-morphology.txt" />
+    <Content Include="FlaskWebClient\textblob\en\en-sentiment.xml" />
+    <Content Include="FlaskWebClient\textblob\en\en-spelling.txt" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.8.4_compressed_pickle_py27_np17.gz" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_compressed_pickle_py26_np16.gz" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_compressed_pickle_py27_np17.gz" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_compressed_pickle_py33_np18.gz" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_compressed_pickle_py34_np19.gz" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_compressed_pickle_py35_np19.gz" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py26_np16.pkl" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py26_np16.pkl_01.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py26_np16.pkl_02.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py26_np16.pkl_03.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py27_np17.pkl" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py27_np17.pkl_01.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py27_np17.pkl_02.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py27_np17.pkl_03.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py33_np18.pkl" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py33_np18.pkl_01.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py33_np18.pkl_02.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py33_np18.pkl_03.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py34_np19.pkl" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py34_np19.pkl_01.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py34_np19.pkl_02.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py34_np19.pkl_03.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py35_np19.pkl" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py35_np19.pkl_01.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py35_np19.pkl_02.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\joblib\test\data\joblib_0.9.2_pickle_py35_np19.pkl_03.npy" />
+    <Content Include="FlaskWebClient\workload\librosa\util\example_data\Kevin_MacLeod_-_Vibe_Ace.ogg" />
+    <Content Include="requirements.txt" />
+    <Content Include="FlaskWebClient\static\content\bootstrap.css" />
+    <Content Include="FlaskWebClient\static\content\bootstrap.min.css" />
+    <Content Include="FlaskWebClient\static\content\site.css" />
+    <Content Include="FlaskWebClient\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="FlaskWebClient\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FlaskWebClient\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="FlaskWebClient\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="FlaskWebClient\static\scripts\bootstrap.js" />
+    <Content Include="FlaskWebClient\static\scripts\bootstrap.min.js" />
+    <Content Include="FlaskWebClient\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="FlaskWebClient\static\scripts\jquery-1.10.2.js" />
+    <Content Include="FlaskWebClient\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="FlaskWebClient\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="FlaskWebClient\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="FlaskWebClient\static\scripts\jquery.validate.js" />
+    <Content Include="FlaskWebClient\static\scripts\jquery.validate.min.js" />
+    <Content Include="FlaskWebClient\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="FlaskWebClient\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="FlaskWebClient\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="FlaskWebClient\static\scripts\respond.js" />
+    <Content Include="FlaskWebClient\static\scripts\respond.min.js" />
+    <Content Include="FlaskWebClient\static\scripts\_references.js" />
+    <Content Include="FlaskWebClient\templates\about.html" />
+    <Content Include="FlaskWebClient\templates\contact.html" />
+    <Content Include="FlaskWebClient\templates\index.html" />
+    <Content Include="FlaskWebClient\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{dae2edeb-e4be-4b1a-b60b-29158a9982ab}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 64-bit 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
