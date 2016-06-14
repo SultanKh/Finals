@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Search For It"
+        android:id="@+id/searchforit"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/songtitle"
+        android:layout_gravity="center_horizontal"
+        android:text="Song..." />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchbtnsong"
+        android:layout_gravity="center_horizontal"
+        android:src="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/resultsintext"
+        android:layout_gravity="center_horizontal" />
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Playing Music from SD Card"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/play11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/stop2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="Stop" />
+
+</LinearLayout>
+    </ScrollView>

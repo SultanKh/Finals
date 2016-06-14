@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Opinning Page</title>
+
+    <!--	<meta name="description" content="Four Boxes Slideshow" />
+        <meta name="keywords" content="background slideshow" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> -->
+
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../static/content/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../static/content/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../static/content/component.css" />
+    <script src="../static/scripts/modernizr.custom.js"></script>
+    <!-- connecting to parse-->
+    <script src="//www.parsecdn.com/js/parse-1.6.12.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <div class="codrops-top clearfix">
+            <a class="codrops-icon codrops-icon-prev" href="#"><span>Check Out</span></a>
+            <span class="right"><a class="codrops-icon codrops-icon-drop" href="#"><span>Take It Down</span></a></span>
+        </div>
+        <div id="boxgallery" class="boxgallery" data-effect="effect-1">
+            <div class="panel"><img src="../static/img/1.jpg" alt="Image 1" /></div>
+            <div class="panel"><img src="../static/img/2.jpg" alt="Image 2" /></div>
+            <div class="panel"><img src="../static/img/3.jpg" alt="Image 3" /></div>
+            <div class="panel"><img src="../static/img/4.jpg" alt="Image 4" /></div>
+        </div>
+        <header class="codrops-header">
+            <h1>Take Your Soule <span>Choose The Music</span></h1>
+            <nav class="codrops-demos">
+                <a class="current-demo" href="/home">Serge Thoroval</a>
+                <a href="/SignUp.html">Sign Up</a>
+                <a href="/logIn.html">Login Here</a>
+            </nav>
+        </header>
+    </div><!-- /container -->
+    <script src="../static/scripts/classie.js"></script>
+    <script src="../static/scripts/boxesFx.js"></script>
+    <script>
+       
+        Parse.initialize("Zq8onFf4i6UMn5q0pjbrnjSWAuNq40jDDXMehOZy", "R9Bl6IYxfR3mM9YO7bvC4ZSS39im43rqi4OYKmS5");
+        new BoxesFx(document.getElementById('boxgallery'));
+        
+    </script>
+</body>
+</html>

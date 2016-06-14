@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/content/ClientFinePage.css" />
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+
+
+    <!--First Test 
+    <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+    -->
+
+    <!--Second Test With YouTube
+    <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=init"></script>
+        -->
+
+    <!--Third Test With YouTube
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    -->
+
+
+
+
+    <script src="../static/scripts/ClientFinePage.js"></script>
+
+    
+
+</head>
+<body>
+    <div id="container">
+        <div id="header"><h1>Sultan's Music Player</h1>
+            <div class="search_bar">
+                 <div align="center" class="pre-scrollable">
+                <br>
+                <input class="search" name="searching" id="searchit" placeholder="Search..." />
+            <br>
+                <br><input type="button" id="search-button" class="search-button" onclick="search_this_soundcloud()" value="" />
+
+                <br>
+
+              </div>
+        </div>
+       </div>
+        <div id="wrapper">
+            <div id="content">
+                <div class="player">
+                    <div id="soundcloud">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="extra">
+            <p><strong>More stuff here.</strong></p>
+            <p>sit malesuada lacus pellus parturpiscing. Pellenterdumat maecenatoque cras a magna nibh et quis diam ames et. Laoremvolutpat ac dolor eget eget temper lacus vestibus velit lacus venean. Magnaipsum tellus morbi leo aliquat nulla convallis pellentesque.</p>
+        </div>
+
+        <!--============================YOUTUBE PLAYER------------------------------->
+        <div id="wrapper">
+            <!--
+                <iframe id="ytplayer" type="text/html" width="640" height="390"
+                        src="http://www.youtube.com/embed/JeLPCETf0Ic"
+                        frameborder="0" />
+                -->
+            <div id="results">
+
+            </div>
+
+
+        </div>
+
+
+
+        <!--=======================Menu Suggestion-->
+        <div id="wrapper">
+            <div id="content">
+                <h1>SUGGESTION FOR YOU!</h1>
+
+                <ul>
+                    <li class="hexagon">
+                        <a class="hexagon-in1" href="#"><span class="hexagon-in2">Blog</span></a>
+                    </li>
+                    <li class="hexagon">
+                        <a class="hexagon-in1" href="#"><span class="hexagon-in2">Kseso</span></a>
+                    </li>
+                    <li class="hexagon">
+                        <a class="hexagon-in1" href="#"><span class="hexagon-in2">Css</span></a>
+                    </li>
+                    <li class="hexagon">
+                        <a class="hexagon-in1" href="#"><span class="hexagon-in2">Demo</span></a>
+                    </li>
+                    <li class="hexagon">
+                        <a class="hexagon-in1" href="#"><span class="hexagon-in2">Code</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="showing_suggest">
+
+                </div>
+            </div>
+        </div>
+
+        <!--ENDS HERE-->
+        <div id="wrapper">
+            <div id="content">
+                <div id="fileupload">
+                    <h1>Upload Your Song!  </h1>
+                    <!--<form action="ClientMainPage.html/uplaoding" method="post" enctype="multipart/form-data">-->
+                    <input type="file" id="audiofile" name="audiofile" />
+                    <div id="drop_zone">Drop file here</div>
+                    <div id="progress_bar"><div class="percent">0%</div></div>
+                    <input type="button" id="Uploader" value="Upload">
+                    <!--</form>-->
+
+                </div>
+            </div>
+        </div>
+        <div id="extra">
+            <p><strong>More stuff here.</strong></p>
+            <p>sit malesuada lacus pellus parturpiscing. Pellenterdumat maecenatoque cras a magna nibh et quis diam ames et. Laoremvolutpat ac dolor eget eget temper lacus vestibus velit lacus venean. Magnaipsum tellus morbi leo aliquat nulla convallis pellentesque.</p>
+        </div>
+
+
+        <div id="navigation">
+          <p><strong>Navigation Here</strong></p>
+          <ul>
+            <li><a href="http://www.free-css.com/">Free CSS Templates</a></li>
+            <li><a href="http://www.free-css.com/free-css-layouts.php">Free CSS Layouts</a></li>
+          </ul>
+        </div>
+
+        <div id="footer">
+            <p>Footer</p>
+        </div>
+    </div>
+
+
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+   
+    <script>
+    SC.initialize({
+        client_id: '202024184bfc1c0f1831be842aacd1a7'
+    });
+
+
+
+
+
+    </script>
+            
+
+</body>
+</html>

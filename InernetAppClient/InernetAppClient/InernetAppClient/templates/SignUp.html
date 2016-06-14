@@ -1,0 +1,153 @@
+﻿
+<html lang="en">
+<head>
+   <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+     Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Flat Login</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="../static/content/signup.css" />
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="../static/scripts/modernizr.custom.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.6.14.min.js"></script>
+
+</head>
+<body>
+    <div class="form">
+
+      <!-- tab ground class="tab-group">-->
+            
+            
+        <a href="/">Go Back</a>   
+
+        <div class="tab-content">
+            <div id="signup">
+                <h1>Sign Up for Free</h1>
+
+                <form action="/" method="post">
+
+                    <div class="top-row">
+                        
+                        <div class="field-wrap">
+                            
+                            <input id="inputName" type="text" required autocomplete="off" name="First Name*" placeholder="Full Name*"/>
+                        </div>
+
+                        <div class="field-wrap">
+                            
+                            <input id="inputphone" type="text" required autocomplete="off" placeholder="Phone Number*" />
+                        </div>
+                    </div>
+
+                    <div class="field-wrap">
+                        
+                        <input id="inputEmail" type="email" required autocomplete="off" placeholder="Email Addresse*" />
+                    </div>
+
+                    <div class="field-wrap">
+                        
+                        <input id="inputPassword" type="password" required autocomplete="off" placeholder="Set Password*"/>
+                    </div>
+
+                    <button type="submit" class="button button-block" id="btnSignUp">Get Started</button>
+                    <div class="field-wrap">
+                        <a href="/logIn.html">Go Login</a>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div id="login">
+                <h1>Welcome Back!</h1>
+
+                <form action="/" method="post">
+
+                    <div class="field-wrap">
+                        <label>
+                            Email Address<span class="req">*</span>
+                        </label>
+                        <input type="email" required autocomplete="off" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Password<span class="req">*</span>
+                        </label>
+                        <input type="password" required autocomplete="off" />
+                    </div>
+
+                    <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+                    <button class="button button-block" >Log In</button>
+
+                </form>
+
+            </div>
+
+        </div><!-- tab-content -->
+
+    </div> <!-- /form -->
+    <script>
+     
+
+    document.getElementById("btnSignUp").addEventListener("click", function () {
+
+        Parse.initialize("Zq8onFf4i6UMn5q0pjbrnjSWAuNq40jDDXMehOZy", "R9Bl6IYxfR3mM9YO7bvC4ZSS39im43rqi4OYKmS5");
+
+        var userDb = Parse.Object.extend("ClientData");
+        var testObject = new userDb();
+        var fullname = document.getElementById("inputName").value;
+        var mail = document.getElementById("inputEmail").value;
+        var phone = document.getElementById("inputphone").value;
+        var pass = document.getElementById("inputPassword").value;
+        testObject.save({
+            FullName: fullname,
+            Email: mail,
+            PhoneNumber: phone,
+            Password: pass
+        }, {
+            success: function (userDb) {
+                // The object was saved successfully.
+                alert("Horra it saved");
+            },
+            error: function (userDb, error) {
+                // The save failed.
+                // error is a Parse.Error with an error code and message.
+                alert("did not saved");
+            }
+        });
+    });
+    /*
+    new BoxesFx(document.getElementById('boxgallery'));
+    $(function () {
+        $('#btnSignUp').click(function () {
+
+            $.ajax({
+                url: '/signingUp',
+                data: $('form').serialize(),
+                type: 'POST',
+                success: function (response) {
+                    console.log(response);
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        });
+    });
+    */
+    </script>
+
+</body>
+</html>

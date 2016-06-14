@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up Page</title>
+    <meta name="Sultan" content="nothing to show" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!--<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'> -->
+   <link rel="stylesheet" type="text/css" href="../static/content/normalize.css" />
+     <link rel="stylesheet" type="text/css" href="../static/content/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../static/content/component.css" />
+    <!--<script src="../static/scripts/jquery-1.10.2.min.js"></script>
+    <script src="../static/scripts/modernizr.custom.js"></script>-->
+    
+
+</head>
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <div class="codrops-top clearfix">
+            <a class="codrops-icon codrops-icon-prev" href="#"><span>Previous</span></a>
+            <span class="right"><a class="codrops-icon codrops-icon-drop" href="/"><span></span></a></span>
+        </div>
+        <div id="boxgallery" class="boxgallery" data-effect="effect-2">
+           <!-- <div class="panel"><img src="../static/img/3.jpg" alt="Image 3" /></div>
+            <div class="panel"><img src="../static/img/4.jpg" alt="Image 4" /></div>
+            <div class="panel"><img src="../static/img/1.jpg" alt="Image 1" /></div>-->
+            <div class="panel"><img src="../static/img/2.jpg" alt="Image 2" /></div>
+        </div>
+
+        <header class="codrops-header">
+            <div class="container">
+                <div class="header">
+                    <h1>Sign Up</h1>
+                </div>
+
+                <div class="forgot">
+                   
+                    <div>
+                        <label for="inputName" class="sr-only">Name</label>
+                        <input type="text" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus>
+                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        <label for="inputEmail" class="sr-only">PhoneNumber</label>
+                        <input type="email" name="inputphonenumber" id="inputphonenumber" class="form-control" placeholder="Phone Number" required autofocus>
+
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+
+                        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Sign up</button>
+                    </div>
+                </div>
+              </div>
+        </header>
+
+    </div><!-- /container -->
+   <!-- <script src="../static/scripts/classie.js"></script>
+    <script src="../static/scripts/boxesFx.js"></script>-->
+
+
+    <script >
+        document.getElementById("btnSignUp").addEventListener("click", function () {
+           
+       
+        
+        var TestObject = Parse.Object.extend("ClientData");
+        var testObject = new TestObject();
+        var fullname = document.getElementById("inputName").value;
+        var mail = document.getElementById("inputEmail").value;
+        var phone = document.getElementById("inputphonenumber").value;
+        var pass = document.getElementById("inputPassword").value;
+        testObject.save({ FullName: fullname,Email:mail,PhoneNumber:phone,Password:pass }).then(function (object) {
+            alert("yay! it worked");
+            });
+        });
+        /*
+        new BoxesFx(document.getElementById('boxgallery'));
+        $(function () {
+            $('#btnSignUp').click(function () {
+
+                $.ajax({
+                    url: '/signingUp',
+                    data: $('form').serialize(),
+                    type: 'POST',
+                    success: function (response) {
+                        console.log(response);
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+        */
+    </script>
+</body>
+</html>

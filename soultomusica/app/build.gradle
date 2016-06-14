@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    useLibrary 'org.apache.http.legacy'
+
+
+
+    defaultConfig {
+        applicationId "com.example.alsultan.soultomusica"
+        minSdkVersion 23
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86", "armeabi", "mips"
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.jjoe64:graphview:4.0.1'
+    //for graph disp
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.android.volley:volley:1.0.0'
+    //compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.parse:parse-android:1.+'
+    compile files('src/main/java/com/example/alsultan/soultomusica/Parse-1.13.0.jar')
+    compile files('src/main/java/com/example/alsultan/soultomusica/parseUI.jar')
+    compile files('src/main/java/com/example/alsultan/soultomusica/YouTubeAndroidPlayerApi.jar')
+    compile files('src/main/java/com/example/alsultan/soultomusica/acrcloud-android-sdk-1.2.8.jar')
+    compile files('src/main/java/com/example/alsultan/soultomusica/firebase-client-android-2.5.2.jar')
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sunsetphone">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Starting"
+            android:id="@+id/starting"
+            android:textColor="@color/abc_secondary_text_material_dark"
+
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="YOUTUBE"
+        android:id="@+id/goyoutube"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/switch_thumb_normal_material_light" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Searching"
+            android:id="@+id/searchtxt"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+             />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DIGITAL7"
+        android:id="@+id/gosevend"
+        android:layout_gravity="right"
+        android:backgroundTint="#eedcdc"
+        android:textColor="#f6e8e8" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Results"
+            android:id="@+id/showresults"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Go Youtube"
+        android:id="@+id/youtubelist"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#d5c3c3"
+        android:textStyle="bold|italic"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Audie Reco"
+        android:id="@+id/audioreco"
+        android:layout_gravity="right"
+        android:textColor="#eadddd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Log in"
+        android:id="@+id/mainpagelogin"
+        android:textColor="@color/abc_secondary_text_material_dark"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sign Up"
+        android:id="@+id/mainpagesignup"
+        android:textColor="@color/abc_background_cache_hint_selector_material_light"
+        android:layout_gravity="right" />
+
+    <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:text="Music Player"
+android:id="@+id/music_player"
+android:textColor="@color/abc_background_cache_hint_selector_material_light" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />
+
+
+
+
+</LinearLayout>

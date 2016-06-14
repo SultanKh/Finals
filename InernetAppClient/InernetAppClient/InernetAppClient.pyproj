@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d7ca4e83-864c-4b24-a008-e00c743f56a7</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <StaticUriPattern>^/static/.*</StaticUriPattern>
+    <StaticUriRewrite>^/$(MSBuildProjectName)/static/.*</StaticUriRewrite>
+    <PythonWsgiHandler>$(MSBuildProjectName).app</PythonWsgiHandler>
+    <Name>InernetAppClient</Name>
+    <RootNamespace>InernetAppClient</RootNamespace>
+    <InterpreterId>{785760da-0079-4f0a-8735-8bef64c51d24}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runserver.py" />
+    <Compile Include="InernetAppClient\__init__.py" />
+    <Compile Include="InernetAppClient\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InernetAppClient\" />
+    <Folder Include="InernetAppClient\static\img\" />
+    <Folder Include="InernetAppClient\static\" />
+    <Folder Include="InernetAppClient\static\content\" />
+    <Folder Include="InernetAppClient\static\fonts\" />
+    <Folder Include="InernetAppClient\static\scripts\" />
+    <Folder Include="InernetAppClient\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InernetAppClient\static\img\01 %282%29.jpg" />
+    <Content Include="InernetAppClient\static\img\01 %283%29.jpg" />
+    <Content Include="InernetAppClient\static\img\01.jpg" />
+    <Content Include="InernetAppClient\static\img\02 %282%29.jpg" />
+    <Content Include="InernetAppClient\static\img\02 %283%29.jpg" />
+    <Content Include="InernetAppClient\static\img\02.jpg" />
+    <Content Include="InernetAppClient\static\img\03 %282%29.jpg" />
+    <Content Include="InernetAppClient\static\img\03 %283%29.jpg" />
+    <Content Include="InernetAppClient\static\img\03.jpg" />
+    <Content Include="InernetAppClient\static\img\04 %282%29.jpg" />
+    <Content Include="InernetAppClient\static\img\04 %283%29.jpg" />
+    <Content Include="InernetAppClient\static\img\04.jpg" />
+    <Content Include="InernetAppClient\static\img\05 %282%29.jpg" />
+    <Content Include="InernetAppClient\static\img\05 %283%29.jpg" />
+    <Content Include="InernetAppClient\static\img\05.jpg" />
+    <Content Include="InernetAppClient\static\img\06 %282%29.jpg" />
+    <Content Include="InernetAppClient\static\img\06.jpg" />
+    <Content Include="InernetAppClient\static\img\07.jpg" />
+    <Content Include="InernetAppClient\static\img\08.jpg" />
+    <Content Include="InernetAppClient\static\img\1.jpg" />
+    <Content Include="InernetAppClient\static\img\2.jpg" />
+    <Content Include="InernetAppClient\static\img\3.jpg" />
+    <Content Include="InernetAppClient\static\img\4.jpg" />
+    <Content Include="InernetAppClient\static\img\abdel.mp3" />
+    <Content Include="InernetAppClient\static\img\Antique Typewriter.jpg" />
+    <Content Include="InernetAppClient\static\img\fair-5.jpg" />
+    <Content Include="InernetAppClient\static\img\fromplane.jpg" />
+    <Content Include="InernetAppClient\static\img\FUI.mp4" />
+    <Content Include="InernetAppClient\static\img\intro.mp4" />
+    <Content Include="InernetAppClient\static\img\my hearts swimming.jpeg" />
+    <Content Include="InernetAppClient\static\img\natural takes it way.jpeg" />
+    <Content Include="InernetAppClient\static\img\Old Clock.jpg" />
+    <Content Include="InernetAppClient\static\img\ontable.jpg" />
+    <Content Include="InernetAppClient\static\img\papers.co-ml93-aurora-night-sky-instagram-art-nature-15-wallpaper.jpg" />
+    <Content Include="InernetAppClient\static\img\quit up on mountain.jpeg" />
+    <Content Include="InernetAppClient\static\img\rabelos-vila-nova-de-gaia-portugal.jpg" />
+    <Content Include="InernetAppClient\static\img\seeking beaty.jpeg" />
+    <Content Include="InernetAppClient\static\img\space is beauty.jpg" />
+    <Content Include="InernetAppClient\static\img\Stacked Retro Glass Bottles.jpg" />
+    <Content Include="InernetAppClient\static\img\sun take it all.jpeg" />
+    <Content Include="InernetAppClient\static\img\Vintage Cash Register.jpg" />
+    <Content Include="InernetAppClient\static\img\Vintage Film Container.jpg" />
+    <Content Include="InernetAppClient\static\img\Vintage Phone Dial.jpg" />
+    <Content Include="InernetAppClient\static\img\Vintage Piano.jpg" />
+    <Content Include="InernetAppClient\static\img\Vintage Posters.jpg" />
+    <Content Include="InernetAppClient\static\img\Vintage Radios.JPG" />
+    <Content Include="InernetAppClient\static\img\Vintage Scale.jpg" />
+    <Content Include="InernetAppClient\static\content\ClientFinePage.css" />
+    <Content Include="InernetAppClient\static\content\ClientMainPage.css" />
+    <Content Include="InernetAppClient\static\content\component.css" />
+    <Content Include="InernetAppClient\static\content\demo.css" />
+    <Content Include="InernetAppClient\static\content\Login.css" />
+    <Content Include="InernetAppClient\static\content\normalize.css" />
+    <Content Include="InernetAppClient\static\content\signup.css" />
+    <Content Include="InernetAppClient\static\scripts\boxesFx.js" />
+    <Content Include="InernetAppClient\static\scripts\classie.js" />
+    <Content Include="InernetAppClient\static\scripts\ClientFinePage.js" />
+    <Content Include="InernetAppClient\static\scripts\clientmainpage.js" />
+    <Content Include="InernetAppClient\static\scripts\Login.js" />
+    <Content Include="InernetAppClient\templates\ClientFinePage.html" />
+    <Content Include="InernetAppClient\templates\ClientMainPage.html" />
+    <Content Include="InernetAppClient\templates\item.html" />
+    <Content Include="InernetAppClient\templates\logIn.html" />
+    <Content Include="InernetAppClient\templates\SignUp.html" />
+    <Content Include="InernetAppClient\templates\signuppg.html" />
+    <Content Include="InernetAppClient\templates\StartHere.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="InernetAppClient\static\content\bootstrap.css" />
+    <Content Include="InernetAppClient\static\content\bootstrap.min.css" />
+    <Content Include="InernetAppClient\static\content\site.css" />
+    <Content Include="InernetAppClient\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="InernetAppClient\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="InernetAppClient\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="InernetAppClient\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="InernetAppClient\static\scripts\bootstrap.js" />
+    <Content Include="InernetAppClient\static\scripts\bootstrap.min.js" />
+    <Content Include="InernetAppClient\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="InernetAppClient\static\scripts\jquery-1.10.2.js" />
+    <Content Include="InernetAppClient\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="InernetAppClient\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="InernetAppClient\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="InernetAppClient\static\scripts\jquery.validate.js" />
+    <Content Include="InernetAppClient\static\scripts\jquery.validate.min.js" />
+    <Content Include="InernetAppClient\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="InernetAppClient\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="InernetAppClient\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="InernetAppClient\static\scripts\respond.js" />
+    <Content Include="InernetAppClient\static\scripts\respond.min.js" />
+    <Content Include="InernetAppClient\static\scripts\_references.js" />
+    <Content Include="InernetAppClient\templates\about.html" />
+    <Content Include="InernetAppClient\templates\contact.html" />
+    <Content Include="InernetAppClient\templates\index.html" />
+    <Content Include="InernetAppClient\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{785760da-0079-4f0a-8735-8bef64c51d24}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

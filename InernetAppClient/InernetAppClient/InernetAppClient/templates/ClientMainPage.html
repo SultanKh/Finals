@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="../static/content/ClientMainPage.css" />
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="../static/scripts/clientmainpage.js"></script>
+</head>
+
+<body>
+    <!--***********************************************MUSIC PLAYER FOR ME***********************************************-->
+    <div class="load-mask"></div>
+    <header>
+        <h1>Music Player</h1>
+        <ul>
+            <li id="genre-btn">Genre</li>
+            <li id="query-box"><input placeholder="Search"></li>
+        </ul>
+    </header>
+
+   
+
+    <!---************************************************MUSIC FOR ME ENDs********************************************-->
+    <div class="fullpage">
+        <section id="fullpage">
+            <!--left hand menu-->
+            <!--****************************************************** now the sear bar other content*************************-->
+            <div>
+                <div class="search_bar">
+                    <div align="center" class="pre-scrollable">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <input class="search" name="searching" id="searchit" placeholder="Search..." />
+                        <br>
+                        <br><input type="button" id="search-button" class="search-button" onclick="search_this()" value="" />
+
+                        <br>
+
+                        <br>
+                        <br>
+                        <br />
+                        <br />
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="fullpage">
+
+            <div class="ColumnLeft">
+                <div align="center">
+                    <!--<form action="ClientMainPage.html/uplaoding" method="post" enctype="multipart/form-data">-->
+                    <input type="file" id="audiofile" name="audiofile" />
+                    <div id="drop_zone">Drop file here</div>
+                    <div id="progress_bar"><div class="percent">0%</div></div>
+                    <input type="submit" value="Upload" onclick="dothis()">
+                    <!--</form>-->
+
+                </div>
+
+
+            </div>
+
+            <div class="ColumnLeft">
+                <div id="box1" class="box1">
+                    <h2>Analysis Results: </h2>
+
+                </div>
+                <audio controls>
+
+                    <source src="../static/img/abdel.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+
+
+
+        </section>
+    </div>
+       
+
+
+      
+    
+
+        <!--********************************************BACKROUND-->
+        <div class="fullscreen-bg">
+            <video autoplay poster="../img/videoframe.jpg" class="fullscreen-bg__video">
+
+                <source src="../static/img/intro.mp4" type="video/mp4">
+
+            </video>
+        </div>
+        <!--********************************************BACKROUND-->
+
+</body>
+</html>

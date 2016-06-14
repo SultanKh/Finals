@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alsultan.soultomusica">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+
+    <application
+        android:name=".AppLife"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name=".fragmentlogin"
+            android:label="login"/>
+
+        <activity
+            android:name=".signupclass"
+            android:label="SignUp"/>
+
+        <activity android:name=".starting"
+            android:label="Start"
+            android:exported="true"
+            />
+        <activity android:name=".songanalyzeresults"
+            android:label="Resultss"/>
+
+        <activity android:name=".searchforsong"
+            android:label="searching"/>
+        <activity android:name=".musicplayer1"
+            android:label="searching"/>
+
+        <activity android:name=".searchsongyoutube"
+            android:label="take from youtube"/>
+
+
+        <activity android:name=".songfrom7digital"
+            android:label="take from I dont know"/>
+
+        <activity android:name=".audiofingerprint"
+            android:label="Recognise This Shit"/>
+
+        <activity android:name=".using_youtube"
+            android:label="Query Some Videos">
+        </activity>
+
+
+
+    </application>
+
+
+</manifest>

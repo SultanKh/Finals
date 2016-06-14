@@ -1,0 +1,247 @@
+﻿
+/*=====MENU Suggestion========*/
+  
+  
+  html {
+    background-image: url('../img/seeking beaty.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: 0 30%;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .3);
+  }
+  
+  .hexagon {
+    width: 100px;
+    height: 200px;
+    overflow: hidden;
+    visibility: hidden;
+    transform: rotate(120deg);
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .hexagon-in1 {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    text-decoration: none;
+  }
+  
+  .hexagon-in2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(http://3.bp.blogspot.com/-ngRcjH2o1Z8/UDjvxZrbpYI/AAAAAAAABMU/QDFNiStAbZ4/s1600/fractal25.jpg);
+    overflow: hidden;
+    visibility: visible;
+    line-height: 200px;
+    font-family: 'Capriola', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    transform: rotate(-60deg);
+    transition: 1.5s ease-out;
+  }
+  
+  li:nth-child(1) span {
+    background-position: -15px center;
+  }
+  
+  li:nth-child(2) span {
+    background-position: -115px center;
+  }
+  
+  li:nth-child(3) span {
+    background-position: -215px center;
+  }
+  
+  li:nth-child(4) span {
+    background-position: -315px center;
+  }
+  
+  li:nth-child(5) span {
+    background-position: -415px center;
+  }
+  
+  .hexagon-in2:hover {
+    background-position: -565px center;
+    color: #FCE001;
+  }
+  
+  ul {
+    text-align: center;
+  }
+
+
+/*====================================================================================================*/
+
+html,body{margin:0;padding:0}
+body{font: 76% arial,sans-serif;text-align:center}
+
+p{margin:0 10px 10px}
+a{padding:5px; text-decoration:none; color:#000000;}
+div#header{background-color:#F3F2ED;}
+div#header h1{height:80px;line-height:80px;margin:0;padding-left:10px;}
+div#container{text-align:left}
+div#content p{line-height:1.4}
+div#navigation{background:#F6F0E0;}
+div#navigation ul{margin:15px 0; padding:0; list-style-type:none;}
+div#navigation li{margin-bottom:5px;}
+div#extra{background:#CCC8B3;}
+div#footer{background:#BFBD93;}
+div#footer p{margin:0;padding:5px 10px}
+div#container{width:100%;margin:2 auto}
+div#wrapper{float:left;width:100%;height:100vh;}
+div#content{margin-right: 300px; float:left;}
+div#navigation{float:left;width:150px;margin-left:-150px}
+div#extra{float:left;width:150px;margin-left:-300px}
+div#footer{clear:left;width:100%}
+div#fileupload{
+    position:absolute;
+    left:300px;
+}
+/*==============================UPLAODING FILE==============================*/
+
+input#Uploader{
+    -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  text-shadow: -1px -1px 0 rgba(15, 73, 168, 0.66);
+  -webkit-transition: all 240ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 240ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 240ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 240ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+input#audiofile{
+   
+    font-size: 28px;
+  display: block;
+  width: 200px;
+  height: 10%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+#progress_bar {
+    margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #000;
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+  }
+  #progress_bar.loading {
+    opacity: 0.5;
+  }
+  #progress_bar .percent {
+    background-color: #99ccff;
+    height: auto;
+    width: 0;
+  }
+
+/*==========================================================================*/
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.player {
+    position:absolute;
+  width: 50%;
+  margin: 3% auto;
+  background: #fafafa;
+  -moz-box-shadow: rgba(26, 77, 63, 0.4) 0 0 20px 0;
+  -webkit-box-shadow: rgba(26, 77, 63, 0.4) 0 0 20px 0;
+  box-shadow: rgba(26, 77, 63, 0.4) 0 0 20px 0;
+  cursor: default;
+}
+/*---------------------------------------------------------------------------*/
+
+/**************************SEARCH BAR************************/
+.search {
+  outline: none;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  text-align: center;
+  width: 470px;
+  height: 50px;
+  right: 0;
+  padding: 10px 20px 12px 0px;
+  border: none;
+  font: normal 20px/normal "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: rgba(0, 142, 198, 1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: url("");
+  background-repeat: no-repeat;
+  background-position: 26% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  border-bottom: thin solid rgba(255, 255, 255, .2);
+}
+
+.search-button {
+   outline: none;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 44px;
+  height: 60px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 4px solid rgba(255, 255, 255, 1);
+  -webkit-border-radius: 99px;
+  border-radius: 99px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: url("http://i62.tinypic.com/295aes7.png"), rgba(0, 0, 0, 0.75);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  text-shadow: -1px -1px 0 rgba(15, 73, 168, 0.66);
+  -webkit-transition: all 240ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 240ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 240ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 240ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+/******************************************************************************************************/
