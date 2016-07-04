@@ -1,0 +1,237 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Must Listen</title>
+
+
+    <link href="../static/content/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+
+    <link href="../static/content/style.css" rel="stylesheet" type="text/css" media="all" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://www.gstatic.com/firebasejs/3.0.5/firebase.js"></script>
+
+    <script src="../static/scripts/ClientFinePage.js"></script>
+    <script src="../static/scripts/jquery.min.js"></script>
+
+
+    <!--/script-->
+
+
+</head>
+<body>
+    
+
+    <ul class="side_nav">
+        <li><a class="active scroll" href="#home"></a></li>
+        <li><a class="scroll" href="#about"></a></li>
+        <li><a class="scroll" href="#services"></a></li>
+        <li><a class="scroll" href="#gallery"></a></li>
+        <li><a class="scroll" href="#testimonials"></a></li>
+        <li><a class="scroll" href="#news"></a></li>
+        <li><a class="scroll" href="#contact"></a></li>
+    </ul>
+
+    <div class="menu_box_list">
+
+        <ul>
+            <li class="active act"><a class="hvr-underline-from-center scroll" href="index.html">Suggestions</a></li>
+            <li class="active act"><a href="#about" class="hvr-underline-from-center scroll">ٍSearch For a Song</a></li>
+            <li class="active act"><a href="#services" class="hvr-underline-from-center scroll">Upload a Song</a></li>
+            
+        </ul>
+
+
+    </div>
+
+    <!--
+    <div class="banner" id="home">
+        <div class="container">
+            <div class="header">
+                <div class="menu">
+                    <a href="#" class="right_bt" id="activator"><img src="images/menu.png" alt="" /></a>
+                    <div class="box" id="box">
+                        <div class="box_content">
+                            <div class="menu_box_list">
+
+                                <ul>
+                                    <li class="active act"><a class="hvr-underline-from-center scroll" href="index.html">Home</a></li>
+                                    <li><a href="#about" class="hvr-underline-from-center scroll">About</a></li>
+                                    <li><a href="#services" class="hvr-underline-from-center scroll">Services</a></li>
+                                    <li><a href="#gallery" class="hvr-underline-from-center scroll scroll">Gallery</a></li>
+                                    <li><a href="#testimonials" class="hvr-underline-from-center scroll scroll">Testimonials</a></li>
+                                    <li><a href="#news" class="hvr-underline-from-center scroll scroll">News</a></li>
+                                    <li><a href="#contact" class="hvr-underline-from-center scroll scroll">Contact</a></li>
+                                </ul>
+
+
+                            </div>
+                            <a class="boxclose" id="boxclose"><img src="images/close.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="js/easing.js"></script>
+                    <script type="text/javascript">
+										var $ = jQuery.noConflict();
+											$(function() {
+												$('#activator').click(function(){
+														$('#box').animate({'top':'0px'},500);
+												});
+												$('#boxclose').click(function(){
+														$('#box').animate({'top':'-700px'},500);
+												});
+											});
+											$(document).ready(function(){
+
+											//Hide (Collapse) the toggle containers on load
+											$(".toggle_container").hide();
+
+											//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+											$(".trigger").click(function(){
+												$(this).toggleClass("active").next().slideToggle("slow");
+												return false; //Prevent the browser jump to the link anchor
+											});
+
+											});
+                    </script>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="logo">
+                <a href="index.html"><h1>Tele<span>phone</span></h1></a>
+            </div>
+            <div class="banner-info">
+                <h2>We Provide The Best Service At The<span> Right Price.</span></h2>
+            </div>
+        </div>
+    </div>
+
+ 
+ -->
+
+    <!-- header -->
+    <!--about -->
+    
+    <!--//about-->
+    <!-- fast-service -->
+    
+
+
+    <!-- fast-service -->
+    <!-- gallery -->
+    <div id="gallery" class="gallery">
+        <div class="container">
+            <h3 class="tittle">Gallery</h3>
+            <div class="gallery-grids w3l-agile">
+                <div class="col-md-6 baner-top">
+                    <figure class="effect-bubba">
+                        <a href="#" rel="title" onclick="GivePlaylistId('motivation')" class="b-link-stripe b-animate-go  thickbox">
+                            <img src="../static/img/06.jpg"  alt="" class="img-responsive" />
+                            <figcaption>
+                                <h4>Annoyed And Angry</h4>
+                                <p>Vheer Up Little bit</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="col-md-6 baner-top">
+                    <figure class="effect-bubba">
+                        <a href="#" onclick="GivePlaylistId('joy')" rel="title" class="b-link-stripe b-animate-go  thickbox">
+                            <img src="../static/img/happymusiqa.jpg" alt="" class="img-responsive" />
+                            <figcaption>
+                                <h4>JOY</h4>
+                                <p>Much Of HappySong</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="clearfix"> </div>
+                <div class="baner-row">
+                    <div class="col-md-4 baner-bottom">
+                        <figure class="effect-bubba">
+                            <a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+                                <img src="../static/img/cat-bored.jpg" alt="" class="img-responsive" />
+                                <figcaption>
+                                    <h4 class="sec">Feeling Bored</h4>
+                                    <p>Get Yourself busy</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 baner-bottom">
+                        <figure class="effect-bubba">
+                            <a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+                                <img src="../static/img/lovelyemephant.jpg" alt="" class="img-responsive">
+                                <figcaption>
+                                    <h4 class="sec">Love Life</h4>
+                                    <p>In sit amet sapien eros Integer dolore magna</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 baner-bottom">
+                        <figure class="effect-bubba">
+                            <a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+                                <img src="../static/img/01.jpg" alt="" class="img-responsive">
+                                <figcaption>
+                                    <h4 class="sec">Feelign of Wander</h4>
+                                    <p>makes wanna stay for long..</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-6 baner-top">
+                    <figure class="effect-bubba">
+                        <a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+                            <img src="../static/img/happy.jpg" alt="" class="img-responsive" />
+                            <figcaption>
+                                <h4>Happy hits</h4>
+                                <p>Hit Song Used by our commercials</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="col-md-6 baner-top">
+                    <figure class="effect-bubba">
+                        <a onclick="GivePlaylistId('sad')" class="b-link-stripe b-animate-go  thickbox">
+                            <img src="../static/img/08.jpg" alt="" class="img-responsive" />
+                            <figcaption>
+                                <h4>Why-Are-You-Sad.jpg</h4>
+                                <p>Sad Song Makee You Cry, We make you more</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div id="container">
+                <div id="content1">
+
+                    <div id="showing_suggest1">
+                        <iframe id="gspottify" width="300" height="500" frameborder="0" allowtransparency="true"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //gallery -->
+ 
+    <div class="copy">
+        <p>&copy; 2016 Telephone. All Rights Reserved | Design by Sultan Khalaily Saltana </p>
+    </div>
+    <div class="clearfix"> </div>
+
+    <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- //footer-section --><!--start-smoth-scrolling-->
+    
+
+    <!-- footer -->
+</body>
+</html>
+

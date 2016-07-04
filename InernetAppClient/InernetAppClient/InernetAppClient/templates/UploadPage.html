@@ -1,0 +1,162 @@
+﻿<!--
+    @Author: Sultan Khalaily  
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Upload Song</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/dropzone.js"></script>
+
+    <!--/script-->
+   
+    
+
+</head>
+<body>
+    <!-- header -->
+
+    <ul class="side_nav">
+        <li><a class="active scroll" href="#home"></a></li>
+        <li><a class="scroll" href="#about"></a></li>
+        <li><a class="scroll" href="#services"></a></li>
+        <li><a class="scroll" href="#gallery"></a></li>
+        <li><a class="scroll" href="#testimonials"></a></li>
+        <li><a class="scroll" href="#news"></a></li>
+        <li><a class="scroll" href="#contact"></a></li>
+    </ul>
+
+    <div class="banner" id="home">
+        <div class="container">
+            <div class="header">
+                <div class="menu">
+                    <a href="#" class="right_bt" id="activator"><img src="images/menu.png" alt="" /></a>
+                    <div class="box" id="box">
+                        <div class="box_content">
+                            <div class="menu_box_list">
+
+                                <ul>
+                                    <li class="active act"><a class="hvr-underline-from-center scroll" href="index.html">Home</a></li>
+                                    <li><a href="#about" class="hvr-underline-from-center scroll">About</a></li>
+                                    <li><a href="#services" class="hvr-underline-from-center scroll">Services</a></li>
+                                    <li><a href="#gallery" class="hvr-underline-from-center scroll scroll">Gallery</a></li>
+                                    
+                                </ul>
+
+
+                            </div>
+                            <a class="boxclose" id="boxclose"><img src="images/close.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="js/easing.js"></script>
+                    <script type="text/javascript">
+										var $ = jQuery.noConflict();
+											$(function() {
+												$('#activator').click(function(){
+														$('#box').animate({'top':'0px'},500);
+												});
+												$('#boxclose').click(function(){
+														$('#box').animate({'top':'-700px'},500);
+												});
+											});
+											$(document).ready(function(){
+
+											//Hide (Collapse) the toggle containers on load
+											$(".toggle_container").hide();
+
+											//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+											$(".trigger").click(function(){
+												$(this).toggleClass("active").next().slideToggle("slow");
+												return false; //Prevent the browser jump to the link anchor
+											});
+
+											});
+                    </script>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="logo">
+                <a href="index.html"><h1>Tele<span>phone</span></h1></a>
+            </div>
+            <div class="banner-info">
+                <h2>We Provide The Best Service At The<span> Right Price.</span></h2>
+            </div>
+        </div>
+    </div>
+   
+    <div class="new service" id="news">
+        <div class="container">
+            <h3 class="tittle">Upload Song File</h3>
+            <div class="news-top main">
+                <div class="col-md-6 new-left">
+                    <img src="images/n1.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="col-md-6 new-right">
+                    <h3><a href="single.html">25.05.2016</a></h3>
+                    <form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
+                        <input id="file_ipload" type="file" name="file" />
+                    </form>
+
+                </div>
+                    <a class="view scroll">Analyzo..<i class="arrow-rt1"></i></a>
+
+
+                <div class="clearfix"></div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- fastservice -->
+   
+    <!--/footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="col-md-4 footer-grid">
+                    <h4>Lorem sadipscing </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+                </div>
+                <div class="col-md-4 footer-grid">
+                    <h4>Address</h4>
+                    <ul class="bottom">
+                        <li>
+                            <i class="glyphicon glyphicon-home"></i>
+                            Address Name St. 63, City Name, Country Name
+                        </li>
+                        <li><i class="glyphicon glyphicon-earphone"></i>0986 345 321</li>
+                        <li><i class="glyphicon glyphicon-envelope"></i><a href="mailto:info@example.com">mail@example.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-grid third">
+                    <h4><span>Contact</span> Us</h4>
+                    <div class="sign_up">
+                        <p class="sign">Lorem ipsum dolor sit amet,consectetuer adipiscing elit.</p>
+                        <form action="#" method="post">
+
+                            <input type="text" name="Name" value="Name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name...';}" required="">
+                            <input type="text" name="Email" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}" required="">
+                            <input type="text" name="Email" value="Text..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}" required="">
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <p>&copy; 2016 All Rights Reserved | Designed By Sultana Oman Khalaily</a> </p>
+    </div>
+    <div class="clearfix"> </div>
+
+    <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  
+</body>
+</html>
+
